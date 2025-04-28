@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Меню гри</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Гра: Рухомий квадрат</h1>
+
+  <label for="difficulty">Оберіть складність:</label>
+  <select id="difficulty">
+    <option value="">-- Оберіть складність --</option>
+    <option value="easy">Легка</option>
+    <option value="medium">Середня</option>
+    <option value="hard">Важка</option>
+  </select>
+
+  <br><br>
+
+  <label for="nickname">Ваш нікнейм:</label>
+  <input type="text" id="nickname" placeholder="Введіть нікнейм">
+
+  <br><br>
+
+  <label for="color">Оберіть колір квадрата:</label>
+  <select id="color">
+    <option value="">-- Оберіть колір --</option>
+    <option value="red">Червоний</option>
+    <option value="green">Зелений</option>
+    <option value="blue">Синій</option>
+  </select>
+
+  <br><br>
+
+  <button onclick="startGame()">Почати гру</button>
+
+  <h2>Таблиця рекордів</h2>
+  <div class="table-container">
+    <table id="recordsTable">
+      <thead>
+        <tr>
+          <th>Нік</th>
+          <th>Складність</th>
+          <th>Бали</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Рядки таблиці -->
+      </tbody>
+    </table>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
